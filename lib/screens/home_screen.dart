@@ -54,8 +54,38 @@ class _HomeScreenState extends State<HomeScreen> {
                       courseTitle: 'UI/UX Designer\nBEGINNER',
                       courseImage: 'assets/images/Saly-10.png',
                     );
-                  }
-              )
+                  },
+              ),
+          ),
+          const SizedBox(
+            height: 34
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Free online class',
+                  style: GoogleFonts.roboto(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  )),
+              Text(
+                'From over 80 lectures',
+                style: GoogleFonts.roboto(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: const Color(0xFF9C9A9A)
+                ),
+              ),
+            ],
+          ),
+          ListView.builder(
+            itemCount: 5,
+            shrinkWrap: true,
+            itemBuilder: (context, index){
+              return Container();
+            }
           )
         ],
       )),

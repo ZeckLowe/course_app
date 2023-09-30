@@ -71,7 +71,7 @@ class MyHorizontalList extends StatelessWidget {
                   bottom: 0,
                   child: Image.asset(
                     courseImage,
-                    scale: 2,
+                    scale: 1,
                   ),
                 ),
               ],
