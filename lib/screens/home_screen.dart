@@ -28,19 +28,26 @@ class _HomeScreenState extends State<HomeScreen> {
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   )),
-              Text('Master Class',
-                  style: GoogleFonts.roboto(
-                      fontSize: 36,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.white))
+              Text(
+                'Master Class',
+                style: GoogleFonts.roboto(
+                    fontSize: 36,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white),
+              ),
             ],
           ),
           const SizedBox(
             height: 22,
           ),
-          const SizedBox(
-            height: 349,
-          )
+          SizedBox(
+              height: 349,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  physics: const BouncingScrollPhysics(),
+                  itemBuilder: (context, index) {
+                    return Container();
+                  }))
         ],
       )),
     );
