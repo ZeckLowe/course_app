@@ -1,3 +1,4 @@
+import 'package:course_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -46,8 +47,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   scrollDirection: Axis.horizontal,
                   physics: const BouncingScrollPhysics(),
                   itemBuilder: (context, index) {
-                    return Container();
-                  }))
+                    return const MyHorizontalList(
+                      startColor: 0xFF9288E4,
+                      endColor: 0xFF534EA7,
+                      courseHeadline: 'Recommended',
+                      courseTitle: 'UI/UX Designer\nBEGINNER',
+                      courseImage: 'assets/images/Saly-10.png',
+                    );
+                  }
+              )
+          )
         ],
       )),
     );
