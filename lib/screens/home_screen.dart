@@ -84,7 +84,12 @@ class _HomeScreenState extends State<HomeScreen> {
             itemCount: 5,
             shrinkWrap: true,
             itemBuilder: (context, index){
-              return Container();
+              return MyVerticalList(
+                courseImage: courseImage,
+                courseTitle: courseTitle,
+                courseDuration: courseDuration,
+                courseRating: courseRating
+              );
             }
           )
         ],
